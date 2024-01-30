@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Proyectos\" />
+    <Compile Remove="Pages\angelica\**" />
+    <Content Remove="Pages\angelica\**" />
+    <EmbeddedResource Remove="Pages\angelica\**" />
+    <None Remove="Pages\angelica\**" />
   </ItemGroup>
 
 </Project>
