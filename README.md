@@ -1,5 +1,7 @@
-# Proyecto de Ventas
+El componente VentasR acepta un parámetro VentaRopa de tipo VentaRopa, que debería contener la información del producto a mostrar.
 
-Componentes 
-El Perfil.Razor: es para la descricion del perfiil del sistema 
-El Producto.Razor: es para la descricion de los Productos que venderemos
+VentaRopa.cs que es la clase  
+Foto: Representa la imagen del lo que se vaya a vender.
+Nombre: El nombre del de la ropa o demas cosas que se vaya avernder.
+Descripcion: Descripción detallada lo que se vendera  .
+Precio: El precio de los articulo.
