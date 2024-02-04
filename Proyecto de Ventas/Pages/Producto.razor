@@ -1,1 +1,32 @@
+@page "/Producto"
 
+<h3>Producto</h3>
+@if (DatosVR.Any())
+{
+    foreach(var DatosventR in DatosVR)
+    {
+        <card DatosventaR="@DatosventR"></card>
+    }
+}
+<div>
+
+  
+
+</div>
+@code {
+    public List<Data.VentaRopa> DatosVR { get; set; } = new List<Data.VentaRopa>();
+    protected override void OnInitialized()
+    {
+        var foto = "https://media-we-cdn.oriflame.com/contentImage?u=1907180811&externalMediaId=af6e1599-15ca-41d5-825f-b9eb46704277&name=Giordani+Gold+Essenza&inputFormat=jpg";
+        base.OnInitialized();
+      DatosVR = new List<Data.VentaRopa>()
+      {
+        new Data.VentaRopa()
+        {
+           Nombre = "Perfume Marca Golden", 
+          Descripcion =" El perfume golden es un perfume con olor a miel", 
+          Precio="$:2000", Foto= foto 
+        },
+      };
+    }
+  }
