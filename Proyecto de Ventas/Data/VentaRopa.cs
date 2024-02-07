@@ -1,6 +1,6 @@
 namespace Proyecto_de_Ventas.Data
 {
-   public class VentaRopa
+   public class VentaRopaCard
 {
     public string Foto { get; set; } = string.Empty;
     public string Nombre { get; set; } = string.Empty;
