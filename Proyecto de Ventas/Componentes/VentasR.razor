@@ -1,17 +1,17 @@
 
 <div class="mb-2">
     <div class="card" style="width: 18rem;">
-        <img src="data:image/[formato];base64,VentaRopa.Foto" class="card-img-top" alt="Descripción de la imagen">
+        <img src="data:image/[formato];base64,@DatosVentR.Foto" class="card-img-top" alt="Descripción de la imagen">
         <div class="card-body">
-            <h5 class="card-title">VentaRopa.Nombre</h5>
-            <p class="card-text">VentaRopa.Descripcion</p>
-            <p class="card-text">Precio:VentaRopa.Precio</p>
-            <a href="#" class="btn btn-primary">Comprar ahora</a>
+            <h5 class="card-title">@DatosVentR.Nombre</h5>
+            <p class="card-text">@DatosVentR.Descripcion</p>
+            <p class="card-text">@DatosVentR.Precio</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
 </div>
 
 @code {
     [Parameter]
-    public Componentes.VentaRopa VentaRopa { get; set; } = new Componentes.VentaRopa();
+    public Proyecto_de_Ventas.Data.VentaRopaCard DatosVentR { get; set; } = new Proyecto_de_Ventas.Data.VentaRopaCard();
 }
