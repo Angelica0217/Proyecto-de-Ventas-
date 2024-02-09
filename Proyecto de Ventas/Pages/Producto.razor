@@ -2,6 +2,8 @@
 @using Proyecto_de_Ventas.Data
 
 <h3>Producto</h3>
+
+<div class="Producto">
 @if (DatosVR.Any())
 {
     foreach(var DatosVentR in DatosVR)
@@ -9,7 +11,6 @@
         <Proyecto_de_Ventas.Pages.Componentes.VentasP DatosventR = "@DatosVentR"/>
     }
 }
-
 @code {
     public List<Data.VentaRopaCard> DatosVR { get; set; } = new List<Data.VentaRopaCard>();
     protected override void OnInitialized()
@@ -27,3 +28,4 @@
       };
     }
 }
+</div>
